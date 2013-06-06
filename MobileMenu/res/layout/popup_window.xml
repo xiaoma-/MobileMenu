@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:gravity="center_horizontal"
+  android:background="@drawable/toph"
+  >
+  	<LinearLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:gravity="center_horizontal">
+	    <Button 
+			android:id="@+id/btnPress" 
+			android:layout_width="60dp" 
+			android:layout_height="wrap_content"
+			android:background="@drawable/title_btn_right"
+			android:text="催菜"
+			android:layout_margin="10dip" />
+		<Button 
+			android:id="@+id/btnAddFood" 
+			android:layout_width="60dp" 
+			android:layout_height="wrap_content"
+			android:background="@drawable/title_btn_right"
+			android:layout_marginLeft="0dip"
+			android:layout_marginTop="10dip"
+			android:layout_marginRight="10dip"
+			android:text="加菜"
+			android:layout_marginBottom="10dip" />
+   
+	    <Button 
+			android:id="@+id/btnPay" 
+			android:layout_width="60dp" 
+			android:layout_height="wrap_content"
+			android:background="@drawable/title_btn_right"
+			android:layout_marginLeft="0dip"
+			android:layout_marginTop="10dip"
+			android:layout_marginRight="10dip"
+			android:layout_marginBottom="10dip" 
+			android:text="结账"
+			/>
+	    <Button 
+			android:id="@+id/btnPayMore" 
+			android:layout_width="80dp" 
+			android:layout_height="wrap_content"
+			android:background="@drawable/title_btn_right"
+			android:layout_marginLeft="0dip"
+			android:layout_marginTop="10dip"
+			android:layout_marginRight="10dip"
+			android:layout_marginBottom="10dip" 
+			android:text="并台结账"
+			/>
+    </LinearLayout>
+
+</LinearLayout>

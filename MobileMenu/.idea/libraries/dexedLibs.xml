@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="dexedLibs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/fastjson-1.1.26-sources-1fe0d93f567699f4e3fef3dfa232a03a.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/GifView-a9825a68f5f23304a2e502a0fb6f77e9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/annotations-a52b7fbe9a2ab9c6153e95d0e89068af.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/android-support-v4-525ea63e2488964c6604ee448d57135e.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/fastjson-1.1.26-android-1401d23d0c9e5a039b1bde94e1ec6cbb.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

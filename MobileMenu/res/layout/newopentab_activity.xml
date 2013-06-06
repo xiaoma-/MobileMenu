@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:id="@+id/ll_tab"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_theme_blue"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/login_top_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/title_bar" >
+
+                <Button
+                    android:id="@+id/login_reback_btn"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/title_btn_back"
+                    android:onClick="opentBack"
+                    android:text="返回"
+                    android:textColor="#fff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="台位选择"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/opentFlush_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/title_btn_right"
+                    android:onClick="opentFlush"
+                    android:src="@drawable/flush" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_theme_blue"
+                android:paddingBottom="5dip"
+                android:paddingTop="10dip" >
+
+                <TextView
+                    android:id="@+id/tv_tab_activity"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="大 厅"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_tab_groups"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="包 厢"
+                    android:textColor="@color/lightwhite"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:paddingBottom="3dip" >
+
+                <ImageView
+                    android:id="@+id/iv_bottom_line"
+                    android:layout_width="40dip"
+                    android:layout_height="2dip"
+                    android:layout_marginLeft="70dip"
+                    android:scaleType="matrix"
+                    android:src="#fff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fl_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/hall_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_style_green"
+                    android:gravity="center"
+                    android:onClick="gohall"
+                    android:text="大厅"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/box_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_style_green"
+                    android:gravity="center"
+                    android:onClick="gobox"
+                    android:text="包厢"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.running.mobilemenu.utils.DragViewPager
+            android:id="@+id/newvPager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/login_bo_layout"
+            android:layout_below="@id/ll_tab"
+            android:layout_gravity="center"
+            android:background="#ffffff"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" />
+
+        <LinearLayout
+            android:id="@+id/login_bo_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/title_bar"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/seats_button_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:background="@drawable/title_btn_right"
+                android:onClick="goSelectMeals"
+                android:text="订 台 信 息"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

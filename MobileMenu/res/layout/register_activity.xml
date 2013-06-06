@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:id="@+id/login_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_bar" >
+
+        <Button
+            android:id="@+id/re_back_btn"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/title_btn_back"
+            android:text="返回"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="填写手机号"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/inPhone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_top_layout"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/editPhone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/login_editbox"
+            android:hint="手机号码"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/phoneBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_margin="20dip"
+            android:background="@drawable/btn_style_green"
+            android:text="获取验证码"
+            android:textColor="@color/white"
+            android:textSize="18.0dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/inAuthCode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/inPhone"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textPhone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dip"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/authCode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dip"
+            android:background="@drawable/login_editbox"
+            android:ems="10"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:maxLines="1"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/authButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/inAuthCode"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/sendAuthBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_margin="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/btn_style_green"
+            android:gravity="center"
+            android:text="校 验 验 证 码"
+            android:textColor="@color/white"
+            android:textSize="14.0dip" />
+
+        <Button
+            android:id="@+id/getAuthBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_margin="10dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="13.0dip" />
+    </LinearLayout>
+
+</RelativeLayout>

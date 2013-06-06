@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">电子点餐</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="js">酒\n水</string>
+    <string name="dx">点\n心</string>
+    <string name="lc">凉\n菜</string>
+    <string name="zc">主\n菜</string>
+    <string name="zs">主\n食</string>
+    <string name="tl">汤\n类</string>
+
+</resources>

@@ -1,0 +1,82 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:3494), pid=4588, tid=9396
+#  Error: ShouldNotReachHere()
+#
+# JRE version: 6.0_35-b10
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (20.10-b01 mixed mode windows-amd64 compressed oops)
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000034b000):  JavaThread "Unknown thread" [_thread_in_vm, id=9396, stack(0x0000000002450000,0x0000000002550000)]
+
+Stack: [0x0000000002450000,0x0000000002550000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000000000034b000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=9396, stack(0x0000000002450000,0x0000000002550000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+0x0000000000400000 - 0x000000000042f000 	E:\Java\jdk1.6\bin\javaw.exe
+0x0000000077a30000 - 0x0000000077bdc000 	C:\Windows\SYSTEM32\ntdll.dll
+0x0000000077210000 - 0x000000007732f000 	C:\Windows\system32\kernel32.dll
+0x000007fefdfd0000 - 0x000007fefe03c000 	C:\Windows\system32\KERNELBASE.dll
+0x000007fefe1c0000 - 0x000007fefe29b000 	C:\Windows\system32\ADVAPI32.dll
+0x000007feff600000 - 0x000007feff69f000 	C:\Windows\system32\msvcrt.dll
+0x000007fefe0e0000 - 0x000007fefe0ff000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007feffae0000 - 0x000007feffc0e000 	C:\Windows\system32\RPCRT4.dll
+0x0000000077930000 - 0x0000000077a2a000 	C:\Windows\system32\USER32.dll
+0x000007fefe100000 - 0x000007fefe167000 	C:\Windows\system32\GDI32.dll
+0x000007feffad0000 - 0x000007feffade000 	C:\Windows\system32\LPK.dll
+0x000007feff530000 - 0x000007feff5fa000 	C:\Windows\system32\USP10.dll
+0x000007feff7c0000 - 0x000007feff7ee000 	C:\Windows\system32\IMM32.DLL
+0x000007feff420000 - 0x000007feff529000 	C:\Windows\system32\MSCTF.dll
+0x000000006d8b0000 - 0x000000006e069000 	E:\Java\jdk1.6\jre\bin\server\jvm.dll
+0x000007fefddc0000 - 0x000007fefddfb000 	C:\Windows\system32\WINMM.dll
+0x000000006d820000 - 0x000000006d82e000 	E:\Java\jdk1.6\jre\bin\verify.dll
+0x000000006d450000 - 0x000000006d477000 	E:\Java\jdk1.6\jre\bin\java.dll
+0x000000006d870000 - 0x000000006d882000 	E:\Java\jdk1.6\jre\bin\zip.dll
+0x0000000077c00000 - 0x0000000077c07000 	C:\Windows\system32\PSAPI.DLL
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 -Xbootclasspath:E:\Android\sdk\platforms\android-10\android.jar 
+java_command: com.running.mobilemenu.utils.ToMD5
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=E:\Java\jdk1.6
+CLASSPATH=.;E:\Java\jdk1.6\lib\tools.jar;E:\Java\jdk1.6\lib\dt.jar
+PATH=E:/Java/jdk1.6/bin/../jre/bin/server;E:/Java/jdk1.6/bin/../jre/bin;E:/Java/jdk1.6/bin/../jre/lib/amd64;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;E:\Java\jdk1.6\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;E:\Program Files\mysql\bin;E:\Android\sdk\tools;E:\Android\sdk\platform-tools;E:\Program Files\ssh;E:\Program Files\SSH Secure Shell;C:\Python33;E:\Program Files\eclipse\adt-bundle-windows\eclipse;
+USERNAME=hp
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 18 Model 1 Stepping 0, AuthenticAMD
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7600 
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 18 model 1 stepping 0, cmov, cx8, fxsr, mmx, sse, sse2, sse3, popcnt, mmxext, 3dnowpref, lzcnt, sse4a
+
+Memory: 4k page, physical 3637420k(936232k free), swap 7272932k(2973540k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (20.10-b01) for windows-amd64 JRE (1.6.0_35-b10), built on Aug 28 2012 16:50:10 by "java_re" with MS VC++ 8.0 (VS2005)
+
+time: Mon Jun 03 14:46:19 2013
+elapsed time: 0 seconds
+

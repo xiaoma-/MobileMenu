@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mobile_logo"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:text="商户管家"
+             android:textColor="@android:color/black"
+            android:textSize="34sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+             android:textColor="@android:color/black"
+            android:paddingTop="10dp"
+            android:text="--与客户沟通的桥梁"
+           
+            android:textSize="24sp" />
+    </LinearLayout>
+    <!--
+    <ImageView 
+        
+        android:layout_gravity="center" 
+	    android:paddingTop="50dp"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content" 
+	    android:src="@drawable/logo_main"
+    />
+    -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center|bottom"
+            android:paddingTop="30dp"
+            android:text="版权所有：@2013中国移动通信集团河南有限公司" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center|bottom"
+            android:text="技术支持：郑州软景信息技术有限公司" />
+    </LinearLayout>
+
+    <com.ant.liao.GifView
+        android:id="@+id/loadinggif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/mobile_s" />
+
+</RelativeLayout>
